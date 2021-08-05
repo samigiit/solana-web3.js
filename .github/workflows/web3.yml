@@ -25,5 +25,6 @@ jobs:
           node-version: 'lts/*'
       - run: |
           source .travis/before_install.sh
-          source .travis/script.sh
           npm ci
+          source .travis/script.sh
+          

@@ -8,8 +8,6 @@ jobs:
   build:
     name: test & build
     runs-on: ubuntu-bionic
-    with: 
-      sudo: required
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2

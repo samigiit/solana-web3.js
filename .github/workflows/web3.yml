@@ -35,4 +35,9 @@ jobs:
           ls -l lib
           cp lib/index.iife.js deploy/solanaWeb3.min.js
           ( cd deploy; tar zcf solanaWeb3Api.tgz solanaWeb3Api-$TRAVIS_BRANCH )
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          personal_token: ${{ secrets.PERSONAL_TOKEN }}
+          publish_dir: doc
           
